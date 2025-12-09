@@ -92,4 +92,68 @@ export default function ContactPage() {
               <div className="pt-8">
                 <h3 className="text-lg font-light text-gray-900 mb-4">Commissions</h3>
                 <p className="text-gray-600 leading-relaxed font-light">
-                  Custom co
+                  Custom commissions are available. Please include details about size preferences, 
+                  color palette, and intended space in your inquiry.
+                </p>
+              </div>
+            </div>
+
+            <div>
+              <form className="space-y-6">
+                <div>
+                  <label htmlFor="name" className="block text-sm tracking-widest text-gray-700 mb-2">NAME</label>
+                  <input 
+                    type="text" 
+                    id="name" 
+                    className="w-full px-4 py-3 border border-gray-200 focus:border-gray-900 focus:outline-none transition font-light"
+                  />
+                </div>
+
+                <div>
+                  <label htmlFor="email" className="block text-sm tracking-widest text-gray-700 mb-2">EMAIL</label>
+                  <input 
+                    type="email" 
+                    id="email" 
+                    className="w-full px-4 py-3 border border-gray-200 focus:border-gray-900 focus:outline-none transition font-light"
+                  />
+                </div>
+
+                <div>
+                  <label htmlFor="subject" className="block text-sm tracking-widest text-gray-700 mb-2">SUBJECT</label>
+                  <input 
+                    type="text" 
+                    id="subject" 
+                    className="w-full px-4 py-3 border border-gray-200 focus:border-gray-900 focus:outline-none transition font-light"
+                  />
+                </div>
+
+                <div>
+                  <label htmlFor="message" className="block text-sm tracking-widest text-gray-700 mb-2">MESSAGE</label>
+                  <textarea 
+                    id="message" 
+                    rows={6}
+                    className="w-full px-4 py-3 border border-gray-200 focus:border-gray-900 focus:outline-none transition resize-none font-light"
+                  />
+                </div>
+
+                <button 
+                  type="submit" 
+                  className="w-full bg-gray-900 text-white py-4 text-sm tracking-widest hover:bg-gray-800 transition"
+                >
+                  SEND MESSAGE
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer className="bg-white border-t border-gray-100 py-12">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8 text-center">
+          <p className="text-sm tracking-widest text-gray-900 mb-2">YAYIBART</p>
+          <p className="text-sm text-gray-500">© 2024 All rights reserved</p>
+        </div>
+      </footer>
+    </div>
+  );
+}
