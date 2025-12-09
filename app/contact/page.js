@@ -17,7 +17,6 @@ export default function ContactPage() {
               <span className="text-2xl font-light tracking-widest text-gray-900">YAYIBART</span>
             </Link>
             
-            {/* Desktop Menu */}
             <div className="hidden md:flex items-center space-x-12">
               <Link href="/" className="text-sm tracking-widest text-gray-600 hover:text-gray-900 transition">HOME</Link>
               <Link href="/gallery" className="text-sm tracking-widest text-gray-600 hover:text-gray-900 transition">BROWSE THE GALLERY</Link>
@@ -25,7 +24,6 @@ export default function ContactPage() {
               <Link href="/contact" className="text-sm tracking-widest text-gray-900 border-b border-gray-900 pb-1">CONTACT</Link>
             </div>
 
-            {/* Mobile Menu Button */}
             <button 
               className="md:hidden text-gray-900"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
@@ -34,7 +32,6 @@ export default function ContactPage() {
             </button>
           </div>
 
-          {/* Mobile Menu */}
           {mobileMenuOpen && (
             <div className="md:hidden pb-6 space-y-4">
               <Link href="/" className="block text-sm tracking-widest text-gray-600">HOME</Link>
@@ -46,7 +43,6 @@ export default function ContactPage() {
         </div>
       </nav>
 
-      {/* Hero */}
       <section className="pt-32 pb-16 lg:pt-40 lg:pb-24">
         <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
           <h1 className="text-5xl lg:text-6xl font-extralight text-gray-900 mb-6">Get in Touch</h1>
@@ -56,11 +52,9 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* Contact Content */}
       <section className="pb-24">
         <div className="max-w-5xl mx-auto px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-16">
-            {/* Contact Info */}
             <div className="space-y-12">
               <div className="flex items-start space-x-4">
                 <div className="w-12 h-12 rounded-full bg-gray-50 border border-gray-200 flex items-center justify-center flex-shrink-0">
@@ -98,45 +92,4 @@ export default function ContactPage() {
               <div className="pt-8">
                 <h3 className="text-lg font-light text-gray-900 mb-4">Commissions</h3>
                 <p className="text-gray-600 leading-relaxed font-light">
-                  Custom commissions are available. Please include details about size preferences, 
-                  color palette, and intended space in your inquiry.
-                </p>
-              </div>
-            </div>
-
-            {/* Contact Form */}
-            <div>
-              <form className="space-y-6">
-                <div>
-                  <label htmlFor="name" className="block text-sm tracking-widest text-gray-700 mb-2">NAME</label>
-                  <input 
-                    type="text" 
-                    id="name" 
-                    className="w-full px-4 py-3 border border-gray-200 focus:border-gray-900 focus:outline-none transition font-light"
-                  />
-                </div>
-
-                <div>
-                  <label htmlFor="email" className="block text-sm tracking-widest text-gray-700 mb-2">EMAIL</label>
-                  <input 
-                    type="email" 
-                    id="email" 
-                    className="w-full px-4 py-3 border border-gray-200 focus:border-gray-900 focus:outline-none transition font-light"
-                  />
-                </div>
-
-                <div>
-                  <label htmlFor="subject" className="block text-sm tracking-widest text-gray-700 mb-2">SUBJECT</label>
-                  <input 
-                    type="text" 
-                    id="subject" 
-                    className="w-full px-4 py-3 border border-gray-200 focus:border-gray-900 focus:outline-none transition font-light"
-                  />
-                </div>
-
-                <div>
-                  <label htmlFor="message" className="block text-sm tracking-widest text-gray-700 mb-2">MESSAGE</label>
-                  <textarea 
-                    id="message" 
-                    rows="6" 
-                    className="w-full px-4 py-3 border border-gray-200 focus:border-gray-900 focus:outline-none transition resize-none font-lig
+                  Custom co
